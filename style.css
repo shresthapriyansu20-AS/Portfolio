@@ -99,7 +99,8 @@ body {
 
 .hello-sidebar h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1.5rem; }
 .skills-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; }
-.skill-tag { background: var(--text-main); color: white; padding: 0.5rem 1rem; font-size: 1rem; font-weight: 800; border-radius: 2px; }
+.skill-tag { background: var(--text-main); color: white; padding: 0.5rem 1rem; font-size: 1rem; font-weight: 800; border-radius: 2px; transition: all 0.2s ease; cursor: default; }
+.skill-tag:hover { transform: translate(-4px, -4px); box-shadow: 4px 4px 0 var(--accent); }
 
 /* Dark Sections */
 .dark-section { background-color: #111; color: white; }
@@ -111,7 +112,8 @@ body {
 /* Resume Layout */
 .resume-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1200px; margin: 0 auto; }
 .neon-heading { font-family: var(--font-heading); font-size: 2rem; color: var(--accent); margin-bottom: 2rem; text-transform: uppercase; border-bottom: 2px solid #333; padding-bottom: 1rem; }
-.brutalist-card { background: #1a1a1a; border: 2px solid #333; padding: 2rem; margin-bottom: 2rem; }
+.brutalist-card { background: #1a1a1a; border: 2px solid #333; padding: 2rem; margin-bottom: 2rem; transition: all 0.2s ease; }
+.brutalist-card:hover { transform: translate(-6px, -6px); box-shadow: 8px 8px 0 var(--accent); border-color: var(--accent); }
 .brutalist-card h4 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; }
 .brutalist-card .meta { color: #888; font-family: monospace; font-size: 0.9rem; margin-bottom: 1rem; }
 .brutalist-card .highlight { color: var(--accent); font-weight: 800; margin-top: 1rem; }
@@ -125,8 +127,9 @@ body {
 .project-showcase.reverse { direction: rtl; }
 .project-showcase.reverse > * { direction: ltr; }
 
-.project-img-real { width: 100%; aspect-ratio: 4/3; border: 4px solid var(--text-main); overflow: hidden; background: #ddd; }
+.project-img-real { width: 100%; aspect-ratio: 4/3; border: 4px solid var(--text-main); overflow: hidden; background: #ddd; transition: all 0.2s ease; }
 .project-img-real img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(100%) contrast(1.1); transition: filter 0.3s ease; }
+.project-img-real:hover { transform: translate(-8px, -8px); box-shadow: 12px 12px 0 var(--accent); }
 .project-img-real:hover img { filter: grayscale(0%) contrast(1); }
 .dark-placeholder { border-color: var(--accent); }
 
@@ -140,7 +143,8 @@ body {
 /* Awards Layout */
 .awards-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1200px; margin: 0 auto; }
 .brutalist-list { list-style: none; }
-.brutalist-list li { padding: 2rem 0; border-bottom: 1px solid #333; font-size: 1.1rem; color: #ccc; }
+.brutalist-list li { padding: 2rem 0; border-bottom: 1px solid #333; font-size: 1.1rem; color: #ccc; transition: all 0.2s ease; }
+.brutalist-list li:hover { transform: translateX(10px); color: white; border-bottom-color: var(--accent); }
 .brutalist-list strong { font-weight: 800; font-size: 1.5rem; color: white; display: block; margin-bottom: 0.5rem; }
 .brutalist-list .meta { color: var(--accent); font-family: monospace; font-weight: bold; display: block; margin-bottom: 0.5rem; }
 
