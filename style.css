@@ -113,7 +113,7 @@ body {
 
 /* Hello / About */
 .section-hello { max-width: 1300px; margin: 0 auto; }
-.hello-layout { display: grid; grid-template-columns: 1.2fr 1.5fr 1fr; gap: 4rem; align-items: start; }
+.hello-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: center; max-width: 1000px; margin: 0 auto; }
 
 /* Transform Box Image */
 .bounding-box { position: relative; padding: 10px; border: 2px solid var(--accent); display: inline-block; transition: transform 0.2s ease, box-shadow 0.2s ease; }
@@ -129,9 +129,8 @@ body {
 .intro-text { font-size: 1.5rem; margin-bottom: 1.5rem; }
 .hello-text-column p { margin-bottom: 1.5rem; font-size: 1.1rem; }
 
-.hello-sidebar h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1.5rem; }
 /* Skills Bars */
-.skills-grid-bars { display: flex; flex-direction: column; gap: 1rem; }
+.skills-grid-bars { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; padding-bottom: 2rem; }
 .skill-row { display: block; text-decoration: none; color: var(--text-main); transition: transform 0.2s ease; cursor: pointer; border: 2px solid var(--text-main); padding: 0.75rem 1rem; background: var(--bg-color); }
 .skill-row:hover { transform: translate(-4px, -4px); box-shadow: 6px 6px 0 var(--accent); border-color: var(--accent); color: var(--accent); }
 .skill-info { display: flex; justify-content: space-between; font-weight: 800; margin-bottom: 0.5rem; font-size: 0.85rem; font-family: monospace; text-transform: uppercase; align-items: center; }
