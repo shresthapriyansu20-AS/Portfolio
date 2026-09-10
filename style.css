@@ -80,9 +80,36 @@ body {
 .image-inline:hover img { filter: grayscale(0%) contrast(1); }
 .hero-annotation {
     position: absolute; top: 60%; left: 55%; font-family: var(--font-hand); font-size: 2.5rem;
-    display: flex; flex-direction: column; align-items: center; transform: rotate(-10deg); color: var(--accent);
+    display: flex; flex-direction: column; align-items: center; color: var(--accent);
+    animation: float-annotation 3s ease-in-out infinite;
 }
+.draw-arrow path { stroke-dasharray: 100; stroke-dashoffset: 100; animation: draw-stroke 1.5s ease-out forwards; }
+.draw-text { opacity: 0; animation: fade-in-text 0.5s ease-out 1s forwards; }
+
+@keyframes draw-stroke { to { stroke-dashoffset: 0; } }
+@keyframes fade-in-text { to { opacity: 1; } }
+@keyframes float-annotation {
+    0%, 100% { transform: rotate(-10deg) translateY(0); }
+    50% { transform: rotate(-15deg) translateY(-10px); }
+}
+
 .ornaments { margin-top: 4rem; font-size: 2rem; letter-spacing: 1.5rem; }
+
+/* Marquee Banner */
+.marquee-container {
+    background: var(--text-main); color: var(--bg-color); padding: 1.5rem 0; overflow: hidden;
+    white-space: nowrap; border-top: 4px solid var(--accent); border-bottom: 4px solid var(--accent);
+    transform: rotate(-2deg) scale(1.05); margin: 2rem 0 8rem; position: relative; z-index: 10;
+}
+.marquee-content {
+    display: inline-block; animation: marquee-scroll 25s linear infinite;
+    font-family: var(--font-heading); font-size: 2rem; letter-spacing: 0.1em;
+}
+.marquee-content span { padding-right: 2rem; }
+@keyframes marquee-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* Selection color */
+::selection { background: var(--accent); color: white; }
 
 /* Hello / About */
 .section-hello { max-width: 1300px; margin: 0 auto; }
