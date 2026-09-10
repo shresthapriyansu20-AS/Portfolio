@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyansu Shrestha | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for Brutalist Design -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -14,16 +13,16 @@
     <header class="top-nav">
         <nav>
             <a href="#hello">Hello</a>
+            <a href="#resume">Resume</a>
             <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
             <a href="#awards">Awards</a>
-            <a href="assets/EnglishCA.pdf" download class="highlight-link">Resume</a>
+            <a href="assets/EnglishCA.pdf" download class="highlight-link">Download CV</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <!-- SCREENSHOT 1: HERO -->
+        <section class="hero full-height">
             <div class="hero-top-labels">
                 <span>CS ENGINEER / DEVELOPER</span>
                 <span>2026</span>
@@ -43,10 +42,10 @@
             </div>
         </section>
 
-        <section id="hello" class="section-hello">
+        <!-- SCREENSHOT 2: ABOUT -->
+        <section id="hello" class="section-hello padded-section">
             <div class="hello-layout">
                 <div class="hello-image-container">
-                    <!-- Transform Box effect from the reference -->
                     <div class="bounding-box">
                         <span class="handle h-tl"></span><span class="handle h-tc"></span><span class="handle h-tr"></span>
                         <span class="handle h-ml"></span><span class="handle h-mr"></span>
@@ -60,91 +59,138 @@
                     <p class="intro-text"><strong>Hi, I'm Priyansu Shrestha.</strong></p>
                     <p>I am a highly motivated Computer Science Engineering student at Lovely Professional University. I build practical solutions, whether it's optimizing a healthcare supply chain with Python or crafting intuitive web interfaces using React.</p>
                     <p>I am continuously exploring new technologies and seeking opportunities to apply my skills to real-world engineering problems.</p>
-                    
-                    <div id="education" class="education-block">
-                        <h3>EDUCATION</h3>
-                        <p><strong>Bachelor of Technology</strong><br>Computer Science And Engineering</p>
-                        <p>Lovely Professional University | 2024 - 2028<br>CGPA: 9.21</p>
-                    </div>
                 </div>
 
                 <div class="hello-sidebar">
-                    <h3>SKILLS</h3>
+                    <h3>TECHNICAL SKILLS</h3>
                     <div class="skills-grid">
                         <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">React.js</span>
                         <span class="skill-tag">C++</span>
                         <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Tailwind</span>
+                        <span class="skill-tag">Tailwind CSS</span>
                         <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
                         <span class="skill-tag">MySQL</span>
-                    </div>
-
-                    <div id="experience" class="margin-top">
-                        <h3>EXPERIENCE</h3>
-                        <div class="exp-block">
-                            <p><strong>2026</strong></p>
-                            <p class="exp-title">Software Dev Intern</p>
-                            <p class="exp-company">CodeCraft Technologies</p>
-                        </div>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Linux</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Ripped paper effect transitioning into the dark section -->
+        <!-- SCREENSHOT 3: RESUME / EXPERIENCE -->
         <div class="torn-edge-top"></div>
-        <section class="dark-section" id="projects">
-            
+        <section id="resume" class="dark-section padded-section">
             <div class="portrait-glow">
                 <img src="assets/profile.png" alt="Priyansu">
             </div>
 
-            <h2 class="giant-text-outline">PROJECTS</h2>
+            <h2 class="giant-text-outline text-left">EXPERIENCE & EDUCATION</h2>
             
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h3>AAROGYA GRID</h3>
-                    <p class="tech">React, Tailwind, Firebase, Python</p>
-                    <p>Health supply-chain platform for forecasting and managing medicines and healthcare resources. Modular architecture with predictive analytics.</p>
-                    <div class="card-links">
-                        <a href="https://github.com/shresthapriyansu20-AS/smart-health-and-supply-chain-resilience/" target="_blank">[GITHUB]</a>
+            <div class="resume-layout">
+                <div class="resume-col">
+                    <h3 class="neon-heading">EDUCATION</h3>
+                    
+                    <div class="brutalist-card">
+                        <h4>B.Tech Computer Science And Engineering</h4>
+                        <p class="meta">Lovely Professional University | Aug 2025 - Present</p>
+                        <p class="highlight">CGPA: 9.21</p>
                     </div>
-                </article>
 
-                <article class="project-card">
-                    <h3>ANIME GUIDE</h3>
-                    <p class="tech">HTML, CSS</p>
-                    <p>Static web interface presenting popular anime streaming platforms using semantic HTML and an organized dark-themed navigation layout.</p>
-                    <div class="card-links">
-                        <a href="https://github.com/shresthapriyansu20-AS/Javascript-and-HTML/blob/main/anime.html" target="_blank">[GITHUB]</a>
+                    <div class="brutalist-card">
+                        <h4>Senior Secondary (Class XII)</h4>
+                        <p class="meta">The Renaissance International School | Apr 2024 - Mar 2025</p>
+                        <p class="highlight">Percentage: 81%</p>
                     </div>
-                </article>
+
+                    <div class="brutalist-card">
+                        <h4>Secondary (Class X)</h4>
+                        <p class="meta">Splendour High School | Apr 2022 - Mar 2023</p>
+                        <p class="highlight">Percentage: 93%</p>
+                    </div>
+                </div>
+
+                <div class="resume-col">
+                    <h3 class="neon-heading">EXPERIENCE</h3>
+                    
+                    <div class="brutalist-card border-accent">
+                        <h4>Software Development Intern</h4>
+                        <p class="meta">CodeCraft Technologies | May 2026 – Jun 2026</p>
+                        <ul class="clean-list">
+                            <li>Developed software modules using Python and C++, applying data structures and OOP to solve programming tasks.</li>
+                            <li>Contributed to application testing and debugging while using Git/GitHub for version control and collaborative development.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <div class="torn-edge-bottom"></div>
 
-        <section id="awards" class="section-awards">
-            <h2 class="bold-heading text-center">CERTIFICATIONS <br>& AWARDS</h2>
+        <!-- SCREENSHOT 4 & 5: LARGE PROJECTS -->
+        <section id="projects" class="section-projects padded-section">
+            <h2 class="bold-heading center spacer">FEATURED WORK</h2>
+            
+            <!-- Project 1 -->
+            <div class="project-showcase">
+                <div class="project-img-placeholder">
+                    <div class="placeholder-cross">
+                         <span>APP PREVIEW<br>(AAROGYA GRID)</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="massive-title">AAROGYA<br>GRID</h3>
+                    <div class="tech-tags-large">React / Tailwind / Firebase / Python</div>
+                    <p class="desc">Health supply-chain platform for forecasting and managing medicines and healthcare resources.</p>
+                    <p class="desc">Implemented a modular architecture with a React/Tailwind frontend, Firebase Cloud Functions backend and a Python-based predictive analytics service to improve supply-chain visibility.</p>
+                    <a href="https://github.com/shresthapriyansu20-AS/smart-health-and-supply-chain-resilience/" target="_blank" class="brutalist-btn">VIEW ON GITHUB ↗</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-showcase reverse">
+                <div class="project-img-placeholder dark-placeholder">
+                    <div class="placeholder-cross">
+                         <span>WEB PREVIEW<br>(ANIME GUIDE)</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="massive-title">ANIME<br>GUIDE</h3>
+                    <div class="tech-tags-large">HTML / CSS</div>
+                    <p class="desc">Designed a static web interface presenting popular anime streaming platforms using semantic HTML and organized navigation.</p>
+                    <p class="desc">Crafted a simple dark-themed layout with structured sections, external images and platform information for easy browsing.</p>
+                    <a href="https://github.com/shresthapriyansu20-AS/Javascript-and-HTML/blob/main/anime.html" target="_blank" class="brutalist-btn">VIEW ON GITHUB ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREENSHOT 6: AWARDS -->
+        <div class="torn-edge-top"></div>
+        <section id="awards" class="dark-section padded-section">
+            <h2 class="giant-text-outline center text-center">AWARDS</h2>
             <div class="awards-layout">
                 <div>
-                    <h3>CERTIFICATIONS</h3>
-                    <ul class="brutalist-list">
-                        <li><strong>Cloud Computing Fundamentals</strong><br>NPTEL | Jul 2026</li>
-                        <li><strong>Introduction to Web Development</strong><br>Coursera | Sep 2025</li>
-                        <li><strong>Python for Everybody</strong><br>Coursera | Jul 2025</li>
+                    <h3 class="neon-heading">CERTIFICATIONS</h3>
+                    <ul class="brutalist-list text-left">
+                        <li><strong>Cloud Computing Fundamentals</strong><br><span class="meta">NPTEL | Jul 2026</span></li>
+                        <li><strong>Introduction to Web Development</strong><br><span class="meta">Coursera | Sep 2025</span></li>
+                        <li><strong>Python for Everybody</strong><br><span class="meta">Coursera | Jul 2025</span></li>
+                        <li><strong>Python Programming & Data Structures</strong><br><span class="meta">Online Training | Jun 2025</span></li>
                     </ul>
                 </div>
                 <div>
-                    <h3>ACHIEVEMENTS</h3>
-                    <ul class="brutalist-list">
-                        <li><strong>1st Position</strong><br>College Coding Competition (50+ participants)</li>
-                        <li><strong>Top 10 Team</strong><br>College Hackathon (Time-limit tech solution)</li>
+                    <h3 class="neon-heading">ACHIEVEMENTS</h3>
+                    <ul class="brutalist-list text-left">
+                        <li><strong>1st Position</strong><br><span class="meta">College Coding Competition</span><br>Secured 1st position in a college-level coding competition, competing against 50+ participants.</li>
+                        <li><strong>Top 10 Team</strong><br><span class="meta">College Hackathon</span><br>Selected among the top 10 teams, developing a technology-based solution within the given time limit.</li>
                     </ul>
                 </div>
             </div>
         </section>
+        <div class="torn-edge-bottom"></div>
         
+        <!-- SCREENSHOT 7: FOOTER -->
         <footer class="footer">
             <h2 class="giant-text">CONTACT</h2>
             <div class="contact-links">
@@ -152,7 +198,7 @@
                 <a href="https://github.com/shresthapriyansu20-AS" target="_blank">GITHUB</a>
                 <a href="https://www.linkedin.com/in/priyansu--shrestha/" target="_blank">LINKEDIN</a>
             </div>
-            <p class="footer-note">Designed & Built 2026</p>
+            <p class="footer-note">Built for CS Portfolio 2026</p>
         </footer>
     </main>
 </body>
